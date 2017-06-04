@@ -23,8 +23,15 @@ layer.
 |Convolution|Levels|1|
 |Word vector|dimensions|300|
 |Dense Layer|Dimensions|100|
+|Pooling|Max Pooling or Average Pooling|
 
-<img src="model_img.png" width="300px">
+## CNN Architecture
+
+Below diagram shows the cnn-architecture taken from [Deep learning for answer
+sentence selection](https://arxiv.org/pdf/1412.1632.pdf) but involved max
+pooling also alongwith filters of dimension 3 and 4, in addition to dimension 2.
+
+<img src="model_img.png" width="500px">
 
 The output of CNN is connected to a Logistic Layer which classifies the answer
 to the question as relevant(**1**) or non-relevant(**0**)
