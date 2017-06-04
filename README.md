@@ -1,6 +1,7 @@
 # Repo for Q-A and Answer triggering systems
 This repository contains experiments on the [WikiQA](https://www.microsoft.com/en-us/research/publication/wikiqa-a-challenge-dataset-for-open-domain-question-answering/) dataset
-mainly for investigating answer triggering.
+mainly for investigating answer triggering - finding the relevant answer out of
+a set of given answers to a question.
 
 The base CNN implementation is from [Deep learning for answer sentence selection](https://arxiv.org/pdf/1412.1632.pdf).
 The logic of using CNN for Sentence selection using word vectors is inspired
@@ -16,17 +17,17 @@ layer.
 
 **CNN statistics**
 
-Parameter|Value
-----------------
-Filter Size|2,3,4
-Convolution Levels|1
-Word vector dimensions|300
-Dense Layer Dimensions|100
+|Parameter|Value|
+|---------|-----|
+|Filter Size|2,3,4|
+|Convolution|Levels|1|
+|Word vector|dimensions|300|
+|Dense Layer|Dimensions|100|
 
-![](model_img.png =500x)
+<img src="model_img.png" width="300px">
 
 The output of CNN is connected to a Logistic Layer which classifies the answer
-to the question as relevant(1) or non-relevant(0)
+to the question as relevant(**1**) or non-relevant(**0**)
 
 ## Tweaks
 
